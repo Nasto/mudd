@@ -1,0 +1,15 @@
+{
+  "name": "sentinel",
+  "productName": "Sentinel",
+  "version": "0.1.0",
+  "description": "helper for SSL in Azure WebApps",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "nasto",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.0.0"
+  }
+}
