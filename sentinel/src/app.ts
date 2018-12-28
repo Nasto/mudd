@@ -17,8 +17,7 @@ function loginClick() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', _ => {
-  document.getElementById('app')!.innerHTML = 'Hello World from the client side!';
+function createLoginForm() {
   const usernameInput = document.createElement('input');
   usernameInput.id = 'usernameInput';
   usernameInput.type = 'text';
@@ -26,10 +25,16 @@ document.addEventListener('DOMContentLoaded', _ => {
   passwordInput.id = 'passwordInput';
   passwordInput.type = 'password';
   const loginButton = document.createElement('button');
+  loginButton.innerHTML = 'Login';
   loginButton.addEventListener('click', loginClick);
   const login = document.createElement('div');
   login.appendChild(usernameInput);
   login.appendChild(passwordInput);
   login.appendChild(loginButton);
   document.getElementById('app')!.appendChild(login);
+}
+
+document.addEventListener('DOMContentLoaded', _ => {
+  document.getElementById('app')!.innerHTML = 'Hello World from the client side!';
+  createLoginForm();
 });
