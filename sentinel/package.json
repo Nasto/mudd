@@ -2,7 +2,7 @@
   "name": "sentinel",
   "productName": "Sentinel",
   "version": "0.1.0",
-  "description": "helper for SSL in Azure WebApps",
+  "description": "Helper for SSL in Azure WebApps",
   "private": true,
   "main": "./dist/foo.js",
   "scripts": {
@@ -26,5 +26,11 @@
     "typescript": "^3.2.2",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@types/azure": "^0.9.20",
+    "azure-arm-website": "^5.7.0",
+    "azure-graph": "^4.3.0",
+    "ms-rest-azure": "^2.5.9"
   }
 }
