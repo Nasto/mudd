@@ -11,7 +11,6 @@ module.exports = [
         target: 'electron-renderer',
         devtool: 'inline-source-map',
         entry: { app: path.resolve(__dirname, 'src/app.tsx') },
-        mode: 'development',
         module: {
             rules: [ 
                 {
@@ -75,7 +74,7 @@ module.exports = [
         },
         plugins: [
             // cleans up the webpack build artifacts on every run
-            new CleanWebpackPlugin(['dist'], {exclude: ['vendor.js']}),
+            new CleanWebpackPlugin(['dist'], {exclude: ['vendors.js']}),
             // generates the index.html file where the app is injected into
             new HtmlWebpackPlugin({
                 title: 'Sentinel',
@@ -92,7 +91,6 @@ module.exports = [
     },
     {
         target: 'electron-main',
-        mode: 'development',
         entry: { main: path.resolve(__dirname, 'src/main.ts') },
         output: {
             // output to dist folder and include a content hash for correct caching behaviour

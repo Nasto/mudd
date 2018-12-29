@@ -8,7 +8,8 @@
   "scripts": {
     "prerestart": "npm run build",
     "start": "electron .",
-    "build": "webpack --config webpack.config.js"
+    "dev": "webpack --mode development --watch",
+    "prod": "webpack --mode production"
   },
   "author": "nasto",
   "license": "MIT",

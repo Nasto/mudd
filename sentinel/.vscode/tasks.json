@@ -4,9 +4,10 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Build dev",
             "type": "npm",
-            "script": "build",
+            "script": "dev",
             "problemMatcher": []
-        }
+        },
     ]
 }
